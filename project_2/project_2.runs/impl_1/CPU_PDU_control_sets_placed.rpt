@@ -1,0 +1,121 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Jun 16 14:13:01 2021
+| Host         : DESKTOP-DDRRTI4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_PDU_control_sets_placed.rpt
+| Design       : CPU_PDU
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    43 |
+|    Minimum number of control sets                        |    43 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    43 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    38 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              82 |           35 |
+| No           | No                    | Yes                    |              56 |           15 |
+| No           | Yes                   | No                     |               1 |            1 |
+| Yes          | No                    | No                     |             992 |          622 |
+| Yes          | No                    | Yes                    |              37 |           21 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+-----------------------------------------------------------------------------------------------------+------------------------+------------------+----------------+
+|           Clock Signal          |                                            Enable Signal                                            |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
++---------------------------------+-----------------------------------------------------------------------------------------------------+------------------------+------------------+----------------+
+|  CPU/ALU/z_reg[0]/G0            |                                                                                                     |                        |                1 |              1 |
+|  CPU/ALU/z0_carry__2_n_1        |                                                                                                     | CPU/RF/z_reg[0]_i_1[0] |                1 |              1 |
+|  clk_IBUF_BUFG                  | CPU/ALU/out0_r[4]_i_3_0[0]                                                                          | rst_IBUF               |                1 |              5 |
+|  CPU/control/Branch_reg_i_2_n_1 |                                                                                                     |                        |                5 |             14 |
+|  clk_IBUF_BUFG                  |                                                                                                     |                        |                5 |             14 |
+|  CPU/control/E[0]               |                                                                                                     |                        |                6 |             21 |
+|  clk_IBUF_BUFG                  |                                                                                                     | rst_IBUF               |                7 |             24 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[9][0]                                                                        |                        |               17 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[9]_1[0]                                                                      |                        |               24 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[10]_5[0]                                                                     |                        |               26 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[7]_2[0]                                                                      |                        |               26 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[10]_2[0]                                                                     |                        |               23 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[9]_5[0]                                                                      |                        |               17 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[7]_3[0]                                                                      |                        |               21 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[7]_1[0]                                                                      |                        |               22 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[8]_5[0]                                                                      |                        |               21 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[10]_3[0]                                                                     |                        |               21 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[7][0]                                                                        |                        |               20 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[9]_3[0]                                                                      |                        |               20 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[10]_4[0]                                                                     |                        |               22 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[7]_0[0]                                                                      |                        |               22 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[10][0]                                                                       |                        |               24 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[9]_0[0]                                                                      |                        |               16 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[10]_0[0]                                                                     |                        |               18 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[8][0]                                                                        |                        |               17 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[9]_4[0]                                                                      |                        |               15 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[10]_1[0]                                                                     |                        |               18 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[11][0]                                                                       |                        |               19 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[11]_1[0]                                                                     |                        |               18 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[7]_5[0]                                                                      |                        |               22 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[9]_2[0]                                                                      |                        |               18 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[8]_0[0]                                                                      |                        |               22 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[8]_1[0]                                                                      |                        |               24 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[8]_2[0]                                                                      |                        |               19 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[8]_3[0]                                                                      |                        |               21 |             32 |
+|  n_0_1856_BUFG                  |                                                                                                     |                        |               18 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[8]_4[0]                                                                      |                        |               18 |             32 |
+|  clk_IBUF_BUFG                  | CPU/ALU/E[0]                                                                                        | rst_IBUF               |               20 |             32 |
+| ~clk_cpu_BUFG                   |                                                                                                     | rst_IBUF               |                8 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[7]_4[0]                                                                      |                        |               14 |             32 |
+| ~clk_cpu_BUFG                   | CPU/control/bbstub_spo[11]_0[0]                                                                     |                        |               17 |             32 |
+|  clk_cpu_BUFG                   | CPU/dist_mem_gen_1/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                        |               32 |            128 |
+|  clk_cpu_BUFG                   | CPU/dist_mem_gen_1/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                        |               32 |            128 |
++---------------------------------+-----------------------------------------------------------------------------------------------------+------------------------+------------------+----------------+
+
+

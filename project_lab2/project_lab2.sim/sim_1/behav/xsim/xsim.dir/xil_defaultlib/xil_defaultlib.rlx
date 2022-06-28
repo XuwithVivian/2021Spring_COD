@@ -1,0 +1,12 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/86139/Documents/COD/lab2/design/FIFO.v,1649251266,verilog,,,,FIFO,,,,,,,,
+C:/Users/86139/Documents/COD/lab2/design/LCU.v,1649251262,verilog,,C:/Users/86139/Documents/COD/lab2/simulation/FIFO_sim.v,,LCU,,,,,,,,
+C:/Users/86139/Documents/COD/lab2/design/RF.v,1649251260,verilog,,C:/Users/86139/Documents/COD/lab2/design/SDU.v,,RF,,,,,,,,
+C:/Users/86139/Documents/COD/lab2/design/RF_32.v,1649252790,verilog,,C:/Users/86139/Documents/COD/lab2/simulation/register.v,,RF_32,,,,,,,,
+C:/Users/86139/Documents/COD/lab2/design/SDU.v,1649251252,verilog,,C:/Users/86139/Documents/COD/lab2/design/FIFO.v,,SDU,,,,,,,,
+C:/Users/86139/Documents/COD/lab2/simulation/FIFO_sim.v,1649251285,verilog,,,,FIFO_sim,,,,,,,,
+C:/Users/86139/Documents/COD/lab2/simulation/register.v,1649252188,verilog,,,,register,,,,,,,,
+C:/Users/86139/project_lab2/project_lab2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,

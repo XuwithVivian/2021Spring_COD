@@ -1,0 +1,127 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 17 19:10:03 2021
+| Host         : DESKTOP-DDRRTI4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_PDU_control_sets_placed.rpt
+| Design       : CPU_PDU
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    49 |
+|    Minimum number of control sets                        |    49 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    51 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    49 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    43 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             109 |           74 |
+| No           | No                    | Yes                    |             271 |           86 |
+| No           | Yes                   | No                     |              20 |           11 |
+| Yes          | No                    | No                     |             992 |          592 |
+| Yes          | No                    | Yes                    |             365 |          118 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-----------------------------------------------------------------------------------------------------+-------------------------+------------------+----------------+
+|         Clock Signal         |                                            Enable Signal                                            |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++------------------------------+-----------------------------------------------------------------------------------------------------+-------------------------+------------------+----------------+
+|  clk_IBUF_BUFG               | CPU/ready_r0_out                                                                                    | rst_IBUF                |                1 |              1 |
+|  CPU/zero_reg[1]/G0          |                                                                                                     |                         |                1 |              1 |
+|  CPU/zero0_carry__2_n_3      |                                                                                                     | CPU/zero_reg[0]_i_1_n_3 |                1 |              1 |
+|  clk_IBUF_BUFG               | CPU/y_MEM_reg[3]_0[0]                                                                               | rst_IBUF                |                2 |              5 |
+|  clk_IBUF_BUFG               | pdu_pl_0511/cnt_m_rf[4]_i_1_n_3                                                                     | rst_IBUF                |                2 |              9 |
+|  clk_IBUF_BUFG               |                                                                                                     |                         |                6 |             12 |
+|  CPU/ctrl_ID_reg[31]_i_2_n_3 |                                                                                                     | rst_IBUF                |               10 |             19 |
+|  clk_IBUF_BUFG               |                                                                                                     | rst_IBUF                |               10 |             28 |
+|  n_2_2240_BUFG               |                                                                                                     |                         |               20 |             32 |
+|  n_1_2249_BUFG               |                                                                                                     |                         |               16 |             32 |
+|  clk_cpu_BUFG                | CPU/pc_IF[0]_i_1_n_3                                                                                | rst_IBUF                |                9 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[3][31]_i_1_n_3                                                                       |                         |               16 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[4][31]_i_1_n_3                                                                       |                         |               20 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[5][31]_i_1_n_3                                                                       |                         |               25 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[8][31]_i_1_n_3                                                                       |                         |               18 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[7][31]_i_1_n_3                                                                       |                         |               23 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[9][31]_i_1_n_3                                                                       |                         |               25 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[30][31]_i_1_n_3                                                                      |                         |               21 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[31][31]_i_1_n_3                                                                      |                         |               18 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[2][31]_i_1_n_3                                                                       |                         |               19 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[11][31]_i_1_n_3                                                                      |                         |               20 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[10][31]_i_1_n_3                                                                      |                         |               12 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[12][31]_i_1_n_3                                                                      |                         |               15 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[14][31]_i_1_n_3                                                                      |                         |               23 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[6][31]_i_1_n_3                                                                       |                         |               26 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[15][31]_i_1_n_3                                                                      |                         |               20 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[18][31]_i_1_n_3                                                                      |                         |               18 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[16][31]_i_1_n_3                                                                      |                         |               10 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[17][31]_i_1_n_3                                                                      |                         |               21 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[20][31]_i_1_n_3                                                                      |                         |               18 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[19][31]_i_1_n_3                                                                      |                         |               18 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[1][31]_i_1_n_3                                                                       |                         |               18 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[21][31]_i_1_n_3                                                                      |                         |               21 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[24][31]_i_1_n_3                                                                      |                         |               18 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[29][31]_i_1_n_3                                                                      |                         |               24 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[26][31]_i_1_n_3                                                                      |                         |               14 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[22][31]_i_1_n_3                                                                      |                         |               17 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[28][31]_i_1_n_3                                                                      |                         |               17 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[25][31]_i_1_n_3                                                                      |                         |               20 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[23][31]_i_1_n_3                                                                      |                         |               21 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[13][31]_i_1_n_3                                                                      |                         |               19 |             32 |
+|  clk_IBUF_BUFG               | CPU/E[0]                                                                                            | rst_IBUF                |               15 |             32 |
+|  n_0_2695_BUFG               |                                                                                                     |                         |               31 |             32 |
+| ~clk_cpu_BUFG                | CPU/RF/regfile[27][31]_i_1_n_3                                                                      |                         |               17 |             32 |
+|  clk_cpu_BUFG                | CPU/pcin_ID                                                                                         | rst_IBUF                |               30 |            104 |
+|  clk_cpu_BUFG                | CPU/dist_mem_gen_1/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                         |               32 |            128 |
+|  clk_cpu_BUFG                | CPU/dist_mem_gen_1/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                         |               32 |            128 |
+|  clk_cpu_BUFG                | CPU/rs2_EX                                                                                          | rst_IBUF                |               59 |            182 |
+|  clk_cpu_BUFG                |                                                                                                     | rst_IBUF                |               76 |            243 |
++------------------------------+-----------------------------------------------------------------------------------------------------+-------------------------+------------------+----------------+
+
+

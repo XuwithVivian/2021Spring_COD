@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jun 17 19:07:51 2021
+# Process ID: 18296
+# Current directory: C:/Users/86139/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log CPU_PDU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_PDU.tcl
+# Log file: C:/Users/86139/project_1/project_1.runs/synth_1/CPU_PDU.vds
+# Journal file: C:/Users/86139/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CPU_PDU.tcl -notrace

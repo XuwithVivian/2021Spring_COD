@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86139/Documents/COD/lab2/design/RF_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86139/Documents/COD/lab2/simulation/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register

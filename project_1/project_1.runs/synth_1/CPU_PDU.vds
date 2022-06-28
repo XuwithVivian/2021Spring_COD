@@ -1,0 +1,584 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jun 17 19:07:51 2021
+# Process ID: 18296
+# Current directory: C:/Users/86139/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log CPU_PDU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_PDU.tcl
+# Log file: C:/Users/86139/project_1/project_1.runs/synth_1/CPU_PDU.vds
+# Journal file: C:/Users/86139/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CPU_PDU.tcl -notrace
+Command: synth_design -top CPU_PDU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14440 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 699.961 ; gain = 177.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU_PDU' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/CPU_PDU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/CPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [C:/Users/86139/project_1/project_1.runs/synth_1/.Xil/Vivado-18296-DESKTOP-DDRRTI4/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (1#1) [C:/Users/86139/project_1/project_1.runs/synth_1/.Xil/Vivado-18296-DESKTOP-DDRRTI4/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86139/project_1/project_1.srcs/sources_1/new/CPU.v:198]
+INFO: [Synth 8-6157] synthesizing module 'RF' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (2#1) [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (3#1) [C:/Users/86139/project_1/project_1.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [C:/Users/86139/project_1/project_1.runs/synth_1/.Xil/Vivado-18296-DESKTOP-DDRRTI4/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (4#1) [C:/Users/86139/project_1/project_1.runs/synth_1/.Xil/Vivado-18296-DESKTOP-DDRRTI4/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (5#1) [C:/Users/86139/project_1/project_1.srcs/sources_1/new/CPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pdu' [C:/Users/86139/Documents/Tencent Files/752987886/FileRecv/pdu_pl_0511.v:1]
+WARNING: [Synth 8-6090] variable 'cnt_al_plr' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/86139/Documents/Tencent Files/752987886/FileRecv/pdu_pl_0511.v:155]
+INFO: [Synth 8-226] default block is never used [C:/Users/86139/Documents/Tencent Files/752987886/FileRecv/pdu_pl_0511.v:255]
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_2r_reg' and it is trimmed from '5' to '2' bits. [C:/Users/86139/Documents/Tencent Files/752987886/FileRecv/pdu_pl_0511.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'pdu' (6#1) [C:/Users/86139/Documents/Tencent Files/752987886/FileRecv/pdu_pl_0511.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_PDU' (7#1) [C:/Users/86139/project_1/project_1.srcs/sources_1/new/CPU_PDU.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 764.156 ; gain = 241.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 764.156 ; gain = 241.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 764.156 ; gain = 241.355
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/86139/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'CPU/dist_mem_gen_1'
+Finished Parsing XDC File [c:/Users/86139/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'CPU/dist_mem_gen_1'
+Parsing XDC File [c:/Users/86139/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'CPU/dist_mem_gen_0'
+Finished Parsing XDC File [c:/Users/86139/project_1/project_1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'CPU/dist_mem_gen_0'
+Parsing XDC File [C:/Users/86139/project_1/project_1.srcs/constrs_1/new/ttt.xdc]
+Finished Parsing XDC File [C:/Users/86139/project_1/project_1.srcs/constrs_1/new/ttt.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/86139/project_1/project_1.srcs/constrs_1/new/ttt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU_PDU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU_PDU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 906.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 906.660 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 906.660 ; gain = 383.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 906.660 ; gain = 383.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for CPU/dist_mem_gen_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CPU/dist_mem_gen_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 906.660 ; gain = 383.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86139/Documents/Tencent Files/752987886/FileRecv/pdu_pl_0511.v:129]
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/ALU.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'bdata_reg' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/CPU.v:831]
+WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/CPU.v:878]
+WARNING: [Synth 8-327] inferring latch for variable 'ctrl_ID_reg' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/CPU.v:196]
+WARNING: [Synth 8-327] inferring latch for variable 'adata_reg' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/CPU.v:821]
+WARNING: [Synth 8-327] inferring latch for variable 'wdata_reg' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/CPU.v:949]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 906.660 ; gain = 383.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 51    
+	                5 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 67    
+	  32 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 6     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   4 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 45    
+	   3 Input      1 Bit        Muxes := 31    
+	   8 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 44    
+	  32 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	   3 Input      1 Bit        Muxes := 31    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module CPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 18    
+	                5 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 22    
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module pdu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[28]' (LDC) to 'CPU/ctrl_ID_reg[29]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[16]' (LDC) to 'CPU/ctrl_ID_reg[13]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[17]' (LDC) to 'CPU/ctrl_ID_reg[9]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[30]' (LDC) to 'CPU/ctrl_ID_reg[31]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[26]' (LDC) to 'CPU/ctrl_ID_reg[3]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[22]' (LDC) to 'CPU/ctrl_ID_reg[3]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[14]' (LDC) to 'CPU/ctrl_ID_reg[3]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[27]' (LDC) to 'CPU/ctrl_ID_reg[3]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[23]' (LDC) to 'CPU/ctrl_ID_reg[3]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[19]' (LDC) to 'CPU/ctrl_ID_reg[3]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[15]' (LDC) to 'CPU/ctrl_ID_reg[3]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_ID_reg[11]' (LDC) to 'CPU/ctrl_ID_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CPU/ctrl_ID_reg[3] )
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[28]' (FDCE) to 'CPU/imm_EX_reg[20]'
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[24]' (FDCE) to 'CPU/imm_EX_reg[20]'
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[20]' (FDCE) to 'CPU/imm_EX_reg[21]'
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[29]' (FDCE) to 'CPU/imm_EX_reg[21]'
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[25]' (FDCE) to 'CPU/imm_EX_reg[21]'
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[21]' (FDCE) to 'CPU/imm_EX_reg[22]'
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[30]' (FDCE) to 'CPU/imm_EX_reg[22]'
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[26]' (FDCE) to 'CPU/imm_EX_reg[22]'
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[22]' (FDCE) to 'CPU/imm_EX_reg[23]'
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[31]' (FDCE) to 'CPU/imm_EX_reg[23]'
+INFO: [Synth 8-3886] merging instance 'CPU/imm_EX_reg[27]' (FDCE) to 'CPU/imm_EX_reg[23]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_EX_reg[28]' (FDCE) to 'CPU/ctrl_EX_reg[29]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_MEM_reg[28]' (FDC) to 'CPU/ctrl_MEM_reg[29]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_WB_reg[28]' (FDC) to 'CPU/ctrl_WB_reg[29]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_EX_reg[16]' (FDCE) to 'CPU/ctrl_EX_reg[13]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_MEM_reg[16]' (FDC) to 'CPU/ctrl_MEM_reg[13]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_WB_reg[16]' (FDC) to 'CPU/ctrl_WB_reg[13]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_EX_reg[17]' (FDCE) to 'CPU/ctrl_EX_reg[9]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_MEM_reg[17]' (FDC) to 'CPU/ctrl_MEM_reg[9]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_WB_reg[17]' (FDC) to 'CPU/ctrl_WB_reg[9]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_EX_reg[30]' (FDCE) to 'CPU/ctrl_EX_reg[31]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_MEM_reg[30]' (FDC) to 'CPU/ctrl_MEM_reg[31]'
+INFO: [Synth 8-3886] merging instance 'CPU/ctrl_WB_reg[30]' (FDC) to 'CPU/ctrl_WB_reg[31]'
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[31] with 1st driver pin 'CPU/RF/regfile_reg[0][31]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[31] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[31] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[30] with 1st driver pin 'CPU/RF/regfile_reg[0][30]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[30] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[30] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[29] with 1st driver pin 'CPU/RF/regfile_reg[0][29]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[29] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[29] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[28] with 1st driver pin 'CPU/RF/regfile_reg[0][28]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[28] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[28] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[27] with 1st driver pin 'CPU/RF/regfile_reg[0][27]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[27] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[27] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[26] with 1st driver pin 'CPU/RF/regfile_reg[0][26]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[26] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[26] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[25] with 1st driver pin 'CPU/RF/regfile_reg[0][25]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[25] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[25] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[24] with 1st driver pin 'CPU/RF/regfile_reg[0][24]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[24] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[24] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[23] with 1st driver pin 'CPU/RF/regfile_reg[0][23]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[23] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[23] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[22] with 1st driver pin 'CPU/RF/regfile_reg[0][22]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[22] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[22] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[21] with 1st driver pin 'CPU/RF/regfile_reg[0][21]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[21] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[21] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[20] with 1st driver pin 'CPU/RF/regfile_reg[0][20]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[20] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[20] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[19] with 1st driver pin 'CPU/RF/regfile_reg[0][19]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[19] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[19] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[18] with 1st driver pin 'CPU/RF/regfile_reg[0][18]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[18] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[18] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[17] with 1st driver pin 'CPU/RF/regfile_reg[0][17]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[17] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[17] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[16] with 1st driver pin 'CPU/RF/regfile_reg[0][16]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[16] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[16] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[15] with 1st driver pin 'CPU/RF/regfile_reg[0][15]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[15] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[15] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[14] with 1st driver pin 'CPU/RF/regfile_reg[0][14]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[14] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[14] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[13] with 1st driver pin 'CPU/RF/regfile_reg[0][13]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[13] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[13] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[12] with 1st driver pin 'CPU/RF/regfile_reg[0][12]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[12] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[12] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[11] with 1st driver pin 'CPU/RF/regfile_reg[0][11]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[11] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[11] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[10] with 1st driver pin 'CPU/RF/regfile_reg[0][10]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[10] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[10] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[9] with 1st driver pin 'CPU/RF/regfile_reg[0][9]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[9] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[9] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[8] with 1st driver pin 'CPU/RF/regfile_reg[0][8]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[8] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[8] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[7] with 1st driver pin 'CPU/RF/regfile_reg[0][7]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[7] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[6] with 1st driver pin 'CPU/RF/regfile_reg[0][6]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[6] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[5] with 1st driver pin 'CPU/RF/regfile_reg[0][5]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[5] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[4] with 1st driver pin 'CPU/RF/regfile_reg[0][4]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[4] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[3] with 1st driver pin 'CPU/RF/regfile_reg[0][3]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[3] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[2] with 1st driver pin 'CPU/RF/regfile_reg[0][2]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[2] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[1] with 1st driver pin 'CPU/RF/regfile_reg[0][1]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[1] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[0] with 1st driver pin 'CPU/RF/regfile_reg[0][0]/Q' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data0[0] with 2nd driver pin 'GND' [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net data0[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/86139/project_1/project_1.srcs/sources_1/new/RF.v:41]
+WARNING: [Synth 8-3332] Sequential element (CPU/ctrl_ID_reg[3]) is unused and will be removed from module CPU_PDU.
+INFO: [Synth 8-3886] merging instance 'CPU/pc_ID_reg[0]' (FDCE) to 'CPU/pcd_ID_reg[0]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcd_EX_reg[0]' (FDCE) to 'CPU/pc_EX_reg[0]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[28]' (FDCE) to 'CPU/pcd_ID_reg[28]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[20]' (FDCE) to 'CPU/pcd_ID_reg[20]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[24]' (FDCE) to 'CPU/pcd_ID_reg[24]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[16]' (FDCE) to 'CPU/pcd_ID_reg[16]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[12]' (FDCE) to 'CPU/pcd_ID_reg[12]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[4]' (FDCE) to 'CPU/pcd_ID_reg[4]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[8]' (FDCE) to 'CPU/pcd_ID_reg[8]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[29]' (FDCE) to 'CPU/pcd_ID_reg[29]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[21]' (FDCE) to 'CPU/pcd_ID_reg[21]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[25]' (FDCE) to 'CPU/pcd_ID_reg[25]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[17]' (FDCE) to 'CPU/pcd_ID_reg[17]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[13]' (FDCE) to 'CPU/pcd_ID_reg[13]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[5]' (FDCE) to 'CPU/pcd_ID_reg[5]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[9]' (FDCE) to 'CPU/pcd_ID_reg[9]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[1]' (FDCE) to 'CPU/pcd_ID_reg[1]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[30]' (FDCE) to 'CPU/pcd_ID_reg[30]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[22]' (FDCE) to 'CPU/pcd_ID_reg[22]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[26]' (FDCE) to 'CPU/pcd_ID_reg[26]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[18]' (FDCE) to 'CPU/pcd_ID_reg[18]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[14]' (FDCE) to 'CPU/pcd_ID_reg[14]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[6]' (FDCE) to 'CPU/pcd_ID_reg[6]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[10]' (FDCE) to 'CPU/pcd_ID_reg[10]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[2]' (FDCE) to 'CPU/pcd_ID_reg[2]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[31]' (FDCE) to 'CPU/pcd_ID_reg[31]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[23]' (FDCE) to 'CPU/pcd_ID_reg[23]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[27]' (FDCE) to 'CPU/pcd_ID_reg[27]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[19]' (FDCE) to 'CPU/pcd_ID_reg[19]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[15]' (FDCE) to 'CPU/pcd_ID_reg[15]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[7]' (FDCE) to 'CPU/pcd_ID_reg[7]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[11]' (FDCE) to 'CPU/pcd_ID_reg[11]'
+INFO: [Synth 8-3886] merging instance 'CPU/pcin_ID_reg[3]' (FDCE) to 'CPU/pcd_ID_reg[3]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 952.438 ; gain = 429.637
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 952.438 ; gain = 429.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1031.578 ; gain = 508.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1032.637 ; gain = 509.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1032.637 ; gain = 509.836
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1032.637 ; gain = 509.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1032.637 ; gain = 509.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1032.637 ; gain = 509.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1032.637 ; gain = 509.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1032.637 ; gain = 509.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
+|2     |dist_mem_gen_1 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |dist_mem_gen_1 |     1|
+|3     |BUFG           |     5|
+|4     |CARRY4         |    48|
+|5     |LUT1           |     4|
+|6     |LUT2           |   300|
+|7     |LUT3           |   206|
+|8     |LUT4           |   100|
+|9     |LUT5           |   553|
+|10    |LUT6           |  1756|
+|11    |MUXF7          |   413|
+|12    |MUXF8          |    80|
+|13    |FDCE           |   617|
+|14    |FDPE           |    19|
+|15    |FDRE           |  1004|
+|16    |LD             |   128|
+|17    |LDC            |    20|
+|18    |LDCP           |     1|
+|19    |IBUF           |    10|
+|20    |OBUF           |    15|
++------+---------------+------+
+
+Report Instance Areas: 
++------+--------------+-------+------+
+|      |Instance      |Module |Cells |
++------+--------------+-------+------+
+|1     |top           |       |  5375|
+|2     |  CPU         |CPU    |  4976|
+|3     |    ALU       |ALU    |   515|
+|4     |    RF        |RF     |  3083|
+|5     |  pdu_pl_0511 |pdu    |   369|
++------+--------------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1032.637 ; gain = 509.836
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 96 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:05 . Memory (MB): peak = 1032.637 ; gain = 367.332
+Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1032.637 ; gain = 509.836
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 690 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1032.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 149 instances were transformed.
+  LD => LDCE: 128 instances
+  LDC => LDCE: 20 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+98 Infos, 9 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 1032.637 ; gain = 741.777
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1032.637 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/86139/project_1/project_1.runs/synth_1/CPU_PDU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_PDU_utilization_synth.rpt -pb CPU_PDU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 17 19:09:15 2021...

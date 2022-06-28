@@ -1,0 +1,17 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/86139/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sim_1/new/lab4_s.v,1623495246,verilog,,,,lab4_s,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1651649672,verilog,,C:/Users/86139/project_2/project_2.srcs/sources_1/new/ALU.v,,dist_mem_gen_0,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v,1651749101,verilog,,C:/Users/86139/project_2/project_2.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,,dist_mem_gen_1,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/new/ALU.v,1651651079,verilog,,C:/Users/86139/project_2/project_2.srcs/sources_1/new/CPU.v,,ALU,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/new/CPU.v,1623810536,verilog,,C:/Users/86139/project_2/project_2.srcs/sources_1/new/Igen.v,,CPU,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/new/Igen.v,1623567517,verilog,,C:/Users/86139/project_2/project_2.srcs/sources_1/new/MUX.v,,Igen,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/new/MUX.v,1623494678,verilog,,C:/Users/86139/project_2/project_2.srcs/sources_1/new/MUX3to1.v,,MUX,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/new/MUX3to1.v,1623494765,verilog,,C:/Users/86139/project_2/project_2.srcs/sources_1/new/RF.v,,MUX3to1,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/new/RF.v,1623493913,verilog,,C:/Users/86139/project_2/project_2.srcs/sources_1/new/control.v,,RF,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/new/control.v,1623494434,verilog,,C:/Users/86139/project_2/project_2.srcs/sources_1/new/mux_alu.v,,control,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/new/mux_alu.v,1623494717,verilog,,C:/Users/86139/project_2/project_2.srcs/sources_1/new/pc_next.v,,mux_alu,,,,,,,,
+C:/Users/86139/project_2/project_2.srcs/sources_1/new/pc_next.v,1623494604,verilog,,C:/Users/86139/project_2/project_2.srcs/sim_1/new/lab4_s.v,,pc_next,,,,,,,,

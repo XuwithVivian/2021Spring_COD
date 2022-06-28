@@ -1,0 +1,32 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               120000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               200000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               280000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               360000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               440000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               520000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               600000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               680000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               760000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               840000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               870000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               910000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               950000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
+WARNING in lab4_s.CPU.dist_mem_gen_1.inst at time               990000 ns: 
+Reading from out-of-range address. Max address in lab4_s.CPU.dist_mem_gen_1.inst is         255
